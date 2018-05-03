@@ -1,0 +1,847 @@
+/*******************************************************************************
+OMCSS Helper Classes - OMCSS Framework
+*******************************************************************************/
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+/**
+* Display
+*/
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+/**
+* Floats
+*/
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-none {
+  float: none;
+}
+
+.clearfix {
+  overflow: auto;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/**
+* Overflow
+*/
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+/**
+* Positions
+*/
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+/**
+* Visibility
+*/
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+/* Display - Flexbox
+   ========================================================================== */
+/**
+* Flex Direction
+*/
+.flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+/**
+* Flex Wrapping
+*/
+.flex-no-wrap {
+  flex-wrap: nowrap;
+  flex-wrap: no;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+/**
+* Flex Align Items
+*/
+.flex-align-items-stretch {
+  align-items: stretch;
+}
+
+.flex-align-items-start {
+  align-items: flex-start;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-align-items-end {
+  align-items: flex-end;
+}
+
+.flex-align-items-baseline {
+  align-items: baseline;
+}
+/**
+* Flex Justify Content
+*/
+.flex-justify-content-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-content-center {
+  justify-content: center;
+}
+
+.flex-justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-justify-content-around {
+  justify-content: space-around;
+}
+/**
+* Flex Align Content
+*/
+.flex-align-content-start	{
+  align-content: flex-start;
+}
+.flex-align-content-center	{
+  align-content: center;
+}
+.flex-align-content-end	{
+  align-content: flex-end;
+}
+.flex-align-content-between	{
+  align-content: space-between;
+}
+.flex-align-content-around	{
+  align-content: space-around;
+}
+/**
+* Flex Align Self
+*/
+.flex-align-self-auto {
+  align-self: auto;
+}
+.flex-align-self-start {
+  align-self: flex-start;
+}
+.flex-align-self-center {
+  align-self: center;
+}
+.flex-align-self-end {
+  align-self: flex-end;
+}
+.flex-align-self-stretch {
+  align-self: stretch;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+* Color
+*/
+.txt-white {
+  color: $color-white;
+}
+
+.txt-black {
+  color: $color-black;
+}
+/**
+* Text Alignment
+*/
+.txt-left-align {
+  text-align: left;
+}
+
+.txt-right-align {
+  text-align: right;
+}
+
+.txt-center-align {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+/**
+* Style & Decoration
+*/
+.italic {
+  font-style: italic;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+/**
+* Font Weight
+*/
+.font-hairline {
+  font-weight: 100;
+}
+
+.font-thin {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+/**
+* Font Size
+*/
+.txt-xxs {
+  font-size: 1rem; //10px
+}
+
+.txt-xs {
+  font-size: 1.2rem; //12px
+}
+
+.txt-sm {
+  font-size: 1.4rem;
+}
+
+.txt-base {
+  font-size: 1rem; //16px
+}
+
+.txt-lg {
+  font-size: 1.8rem;
+}
+
+.txt-xl {
+  font-size: 2rem;
+}
+
+.txt-xxl {
+  font-size: 2.8rem;
+}
+/**
+* Line Height
+*/
+.lh-none {
+  line-height: 1;
+}
+
+.lh-tight {
+  line-height: 1.25;
+}
+
+.lh-normal {
+  line-height: 1.5;
+}
+
+.lh-loose {
+  line-height: 2;
+}
+/**
+* Lists
+*/
+.list-reset {
+  list-style: none;
+  padding: 0;
+}
+/* ==========================================================================
+   Sizing
+   ========================================================================== */
+/**
+* Width
+*/
+.w-screen {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-auto {
+  width: auto;
+}
+/**
+* Height
+*/
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.height-auto {
+  height: auto;
+}
+/* ==========================================================================
+   Margin & Padding
+   ========================================================================== */
+/**
+* Margin
+*/
+.m0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.mx0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.m1 {
+  margin: $space-1;
+}
+
+.mt1 {
+  margin-top: $space-1;
+}
+
+.mr1 {
+  margin-right: $space-1;
+}
+
+.mb1 {
+  margin-bottom: $space-1;
+}
+
+.ml1 {
+  margin-left: $space-1;
+}
+
+.mx1 {
+  margin-left: $space-1;
+  margin-right: $space-1;
+}
+
+.my1 {
+  margin-top: $space-1;
+  margin-bottom: $space-1;
+}
+
+.m2 {
+  margin: $space-2;
+}
+
+.mt2 {
+  margin-top: $space-2;
+}
+
+.mr2 {
+  margin-right: $space-2;
+}
+
+.mb2 {
+  margin-bottom: $space-2;
+}
+
+.ml2 {
+  margin-left: $space-2;
+}
+
+.mx2 {
+  margin-left: $space-2;
+  margin-right: $space-2;
+}
+
+.my2 {
+  margin-top: $space-2;
+  margin-bottom: $space-2;
+}
+
+.m3 {
+  margin: $space-3;
+}
+
+.mt3 {
+  margin-top: $space-3;
+}
+
+.mr3 {
+  margin-right: $space-3;
+}
+
+.mb3 {
+  margin-bottom: $space-3;
+}
+
+.ml3 {
+  margin-left: $space-3;
+}
+
+.mx3 {
+  margin-left: $space-3;
+  margin-right: $space-3;
+}
+
+.my3 {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+}
+
+.m4 {
+  margin: $space-4;
+}
+
+.mt4 {
+  margin-top: $space-4;
+}
+
+.mr4 {
+  margin-right: $space-4;
+}
+
+.mb4 {
+  margin-bottom: $space-4;
+}
+
+.ml4 {
+  margin-left: $space-4;
+}
+
+.mx4 {
+  margin-left: $space-4;
+  margin-right: $space-4;
+}
+
+.my4 {
+  margin-top: $space-4;
+  margin-bottom: $space-4;
+}
+
+.m5 {
+  margin: $space-5;
+}
+
+.mt5 {
+  margin-top: $space-5;
+}
+
+.mr5 {
+  margin-right: $space-5;
+}
+
+.mb5 {
+  margin-bottom: $space-5;
+}
+
+.ml5 {
+  margin-left: $space-5;
+}
+
+.mx5 {
+  margin-left: $space-5;
+  margin-right: $space-5;
+}
+
+.my5 {
+  margin-top: $space-5;
+  margin-bottom: $space-5;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/**
+* Padding
+*/
+.p0 {
+  padding: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.px0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.p1 {
+  padding: $space-1;
+}
+
+.pt1 {
+  padding-top: $space-1;
+}
+
+.pr1 {
+  padding-right: $space-1;
+}
+
+.pb1 {
+  padding-bottom: $space-1;
+}
+
+.pl1 {
+  padding-left: $space-1;
+}
+
+.px1 {
+  padding-left: $space-1;
+  padding-right: $space-1;
+}
+
+.py1 {
+  padding-top: $space-1;
+  padding-bottom: $space-1;
+}
+
+.p2 {
+  padding: $space-2;
+}
+
+.pt2 {
+  padding-top: $space-2;
+}
+
+.pr2 {
+  padding-right: $space-2;
+}
+
+.pb2 {
+  padding-bottom: $space-2;
+}
+
+.pl2 {
+  padding-left: $space-2;
+}
+
+.px2 {
+  padding-left: $space-2;
+  padding-right: $space-2;
+}
+
+.py2 {
+  padding-top: $space-2;
+  padding-bottom: $space-2;
+}
+
+.p3 {
+  padding: $space-3;
+}
+
+.pt3 {
+  padding-top: $space-3;
+}
+
+.pr3 {
+  padding-right: $space-3;
+}
+
+.pb3 {
+  padding-bottom: $space-3;
+}
+
+.pl3 {
+  padding-left: $space-3;
+}
+
+.px3 {
+  padding-left: $space-3;
+  padding-right: $space-3;
+}
+
+.py3 {
+  padding-top: $space-3;
+  padding-bottom: $space-3;
+}
+
+.p4 {
+  padding: $space-4;
+}
+
+.pt4 {
+  padding-top: $space-4;
+}
+
+.pr4 {
+  padding-right: $space-4;
+}
+
+.pb4 {
+  padding-bottom: $space-4;
+}
+
+.pl4 {
+  padding-left: $space-4;
+}
+
+.px4 {
+  padding-left: $space-4;
+  padding-right: $space-4;
+}
+
+.py4 {
+  padding-top: $space-4;
+  padding-bottom: $space-4;
+}
+
+.p5 {
+  padding: $space-5;
+}
+
+.pt5 {
+  padding-top: $space-5;
+}
+
+.pr5 {
+  padding-right: $space-5;
+}
+
+.pb5 {
+  padding-bottom: $space-5;
+}
+
+.pl5 {
+  padding-left: $space-5;
+}
+
+.px5 {
+  padding-left: $space-5;
+  padding-right: $space-5;
+}
+
+.py5 {
+  padding-top: $space-5;
+  padding-bottom: $space-5;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/**
+* Small Devices Only
+*/
+.sm-only {
+  @include medium-size-screen {
+    display: none !important;
+  }
+  @include large-size-screen {
+    display: none !important;
+  }
+}
+/**
+* Medium Devices Only
+*/
+.md-only {
+  @include small-size-screen-only {
+    display: none !important;
+  }
+  @include large-size-screen {
+    display: none !important;
+  }
+}
+/**
+* Large Devices Only
+*/
+.lg-only {
+  @include small-size-screen-only {
+    display: none !important;
+  }
+  @include medium-size-screen-only {
+    display: none !important;
+  }
+}
+/* Media Queries - Hidden
+   ========================================================================== */
+.sm-hide {
+  @include small-size-screen-only {
+    display: none !important;
+  }
+}
+
+.md-hide {
+  @include medium-size-screen-only {
+    display: none !important;
+  }
+}
+
+.lg-hide {
+  @include large-size-screen {
+    display: none !important;
+  }
+}
