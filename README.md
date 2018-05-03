@@ -107,28 +107,28 @@ OMCSS is a modular approach that helps you arrange your css into `theme`, `pages
 
 Below is a complete description of OMCSS file structure:
 
-**Base**
+* **Base**
 Base contains css styles on base content such as reset, grid, typography etc.
 
-**Themes**
+* **Themes**
 Themes contains css styles for your application themes such as primary, secondary, default, dashboard etc.
 
-**Pages**
+* **Pages**
 Pages contains css styles for your individual pages such as home, about-us, contact etc.
 
-**Layouts**
+* **Layouts**
 Layouts contains css style for main application components such as header, footer, sidebar etc.  
 
-**Modules**
+* **Modules**
 Modules contains css style for re-usable application ui components such as carousel, navigation, breadcrumb, card etc.
 
-**Utils**
+* **Utils**
 Modules contains utility styles such as mixins, functions, variables etc.
 
-**Vendors**
+* **Vendors**
 Vendor contains third-party css libraries and frameworks such as jquery-ui, bootstrap, foundation etc.
 
-**Shame**
+* **Shame**
 Shame contains css styles that you are shame about or you have written as an urgent request and will soon change it and write proper code. Its wise to write messy css for any of the above styles over here.
 
 ### Naming Convention
