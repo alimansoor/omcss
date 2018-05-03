@@ -7,7 +7,7 @@ OMCSS (Organisable and Maintainable CSS) is an approach towards creating a scala
 OMCSS provides a bootstrap framework that will help you get started with your application's stylesheet. You can download OMCSS framework from the below options available:
 
 * [Download OMCSS framework](http://www.omcss/download/)
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+* Clone the repo: `git clone https://github.com/alimansoor/omcss.git`
 * Install with npm: `npm install omcss`
 
 ### Prerequisites
@@ -66,33 +66,86 @@ omcss/
 
 ```
 
-### Installing
+### Installation
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+OMCSS provides a file structure that your can place in your application's source stylesheet directory and make use of it.
 
 ```
-Give the example
+application/
+├── css/
+│   ├── omcss/
+│   └── application.css
+│
+├── js/
+│
+├── img/
+│   
+└── index.html
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+You need to run sass compiler to compile individual scss files into your application into  main stylesheet:
 
-## Built With
+```
+sass css/omcss/application.scss css/application.css
+```
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+an alternative example would be:
+
+```
+sass source/stylesheets/omcss/application.scss build/stylesheets/application.css
+```
+
+## Documentation
+
+OMCSS is an approach that will help designers and developers write code that will be future-clean and scalable at the same time. OMCSS' file structure helps developer organise their stylesheets in a manner that produces understandable and clean css structure that is easy to organise and maintain - OMCSS
+
+### OMCSS File Structure
+
+OMCSS is a modular approach that helps you arrange your css into `theme`, `pages`, `layouts` and `modules`. Along with these, it also provide helper folders i.e. `base`, `utils` and `vendors` to organise your helper css files.
+
+Below is a complete description of OMCSS file structure:
+
+**Base**
+Base contains css styles on base content such as reset, grid, typography etc.
+
+**Themes**
+Themes contains css styles for your application themes such as primary, secondary, default, dashboard etc.
+
+**Pages**
+Pages contains css styles for your individual pages such as home, about-us, contact etc.
+
+**Layouts**
+Layouts contains css style for main application components such as header, footer, sidebar etc.  
+
+**Modules**
+Modules contains css style for re-usable application ui components such as carousel, navigation, breadcrumb, card etc.
+
+**Utils**
+Modules contains utility styles such as mixins, functions, variables etc.
+
+**Vendors**
+Vendor contains third-party css libraries and frameworks such as jquery-ui, bootstrap, foundation etc.
+
+**Shame**
+Shame contains css styles that you are shame about or you have written as an urgent request and will soon change it and write proper code. Its wise to write messy css for any of the above styles over here.
+
+### Naming Convention
+
+OMCSS follows Kebab case naming convention in its core e.g. `.txt-white`, `nav-item` etc.
+
+For components that contains sub-classes, OMCSS provides a naming convention which add an underscore as it goes within the tree:
+
+```
+.parent {
+  ._child {
+    .__sub-child {
+      ...
+    }
+  }
+}
+```
 
 ## Contributing
 
@@ -130,4 +183,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * SMACSS, OOCSS, BEM
 * Twitter Bootstrap, Foundation CSS, Materialize CSS, Semantic UI, Tailwind, Marvel.
-
