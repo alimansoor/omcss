@@ -1,6 +1,6 @@
 {
   "name": "omcss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "OMCSS (Organisable and Maintainable CSS) is an approach towards creating a scalable and modular architecture for your application's stylesheet.",
   "main": "index.js",
   "directories": {
