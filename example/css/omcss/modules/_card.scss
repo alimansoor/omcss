@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  ._image {
+    img {
+      width: 100%;
+    }
+  }
+  ._content {
+    .__title {
+    }
+    .__description {
+    }
+  }
+  ._extra {
+    border-top: 1px solid $color-grey-light;
+  }
+}

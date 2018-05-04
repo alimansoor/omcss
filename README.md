@@ -133,9 +133,9 @@ Shame contains css styles that you are shame about or you have written as an urg
 
 ### Naming Convention
 
-OMCSS follows Kebab case naming convention in its core e.g. `.txt-white`, `nav-item` etc.
+OMCSS follows Kebab case naming convention in its core e.g. `.txt-white`, `.nav-item` etc.
 
-For components that contains sub-classes, OMCSS provides a naming convention which add an underscore as it goes within the tree:
+For components that contains sub-classes, OMCSS encourages `_underscore` naming convention which add an underscore as it goes within the tree:
 
 ```
 .parent {
@@ -146,6 +146,8 @@ For components that contains sub-classes, OMCSS provides a naming convention whi
   }
 }
 ```
+
+Please note that above convention is not mandatory. It will facilitate developers to write consistent and future-proof code. However you are free to use any convention of your choice. 
 
 ## Contributing
 

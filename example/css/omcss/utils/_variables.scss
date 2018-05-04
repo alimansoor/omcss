@@ -1,0 +1,53 @@
+//Grid System Breakpoints - screen size
+
+$screen-medium: 600px;
+$screen-large: 1024px;
+
+//Colors
+$color-primary: #3490dc;
+$color-secondary: #faad63;
+$color-brand: #4dc0b5;
+
+$color-transparent: transparent;
+
+/* Green */
+$color-green-darkest: #0f2f21;
+$color-green-darker: #1a4731;
+$color-green-dark: #1f9d55;
+$color-green-base: #38c172;
+$color-green-light: #51d88a;
+$color-green-lighter: #a2f5bf;
+$color-green-lightest: #e3fcec;
+
+/* Grey */
+$color-grey-darkest: #555555;
+$color-grey-darker: #7A7A7A;
+$color-grey-dark: #949494;
+$color-grey-base: #CCCCCC;
+$color-grey-light: #DEDEDE;
+$color-grey-lighter: #F0F0F0;
+$color-grey-lightest: #F7F7F7;
+
+$color-black: #000;
+$color-white: #FFF;
+
+//Font Family
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+$font-sans-serif: sans-serif;
+$font-serif: serif;
+$font-mono: monospace;
+
+$font-primary: 'Open Sans';
+$font-secondary: sans-serif;
+$font-brand: '';
+
+
+//Spacing
+
+$space-1: 0.5rem;  //5px
+$space-2: 1rem; //10px
+$space-3: 1.5rem;
+$space-4: 2rem;
+$space-5: 2.5rem;

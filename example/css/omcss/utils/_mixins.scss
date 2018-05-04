@@ -1,0 +1,31 @@
+// Extra small devices (portrait phones, less than 600px)
+// No media query since this is the default in OMCSS
+
+// Medium devices (Tablets, 600px and above)
+@mixin medium-size-screen {
+  @media (min-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
+// Large devices (Desktops, 1024px and above)
+
+@mixin large-size-screen {
+  @media (min-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+//Small devices ONLY (Mobile, 599px and below)
+@mixin small-size-screen-only {
+  @media (max-width: #{$screen-medium - 1}) {
+    @content;
+  }
+}
+
+//Medium devices ONLY (Tablets, 600px to 1023px)
+@mixin medium-size-screen-only {
+  @media (min-width: #{$screen-medium}) and (max-width: #{$screen-large - 1}) {
+    @content;
+  }
+}
