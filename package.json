@@ -1,0 +1,38 @@
+{
+  "name": "omcss",
+  "version": "1.0.2",
+  "description": "OMCSS (Organisable and Maintainable CSS) is an approach towards creating a scalable and modular architecture for your application's stylesheet.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://alimansoor@github.com/alimansoor/omcss.git"
+  },
+  "keywords": [
+    "scss-framework",
+    "css3",
+    "css-framework",
+    "css",
+    "css3-framework",
+    "sass",
+    "smacss",
+    "oocss",
+    "frontend",
+    "frontend-framework",
+    "modular-css",
+    "bem",
+    "sass",
+    "sass-framework"
+  ],
+  "author": "Muhammad Ali Mansoor <muhammad.mansoor@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alimansoor/omcss/issues"
+  },
+  "homepage": "https://github.com/alimansoor/omcss#readme"
+}
