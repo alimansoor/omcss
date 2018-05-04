@@ -6,7 +6,7 @@ OMCSS (Organisable and Maintainable CSS) is an approach towards creating a scala
 
 OMCSS provides a bootstrap framework that will help you get started with your application's stylesheet. You can download OMCSS framework from the below options available:
 
-* [Download OMCSS framework](http://www.omcss/download/)
+* [Download OMCSS framework](https://github.com/alimansoor/omcss/archive/master.zip)
 * Clone the repo: `git clone https://github.com/alimansoor/omcss.git`
 * Install with npm: `npm install omcss`
 
@@ -147,7 +147,7 @@ For components that contains sub-classes, OMCSS encourages `_underscore` naming 
 }
 ```
 
-Please note that above convention is not mandatory. It will facilitate developers to write consistent and future-proof code. However you are free to use any convention of your choice. 
+Please note that above convention is not mandatory. It will facilitate developers to write consistent and future-proof code. However you are free to use any convention of your choice.
 
 ## Contributing
 
