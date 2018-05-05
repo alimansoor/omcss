@@ -22,7 +22,6 @@ Please visit [https://sass-lang.com/install](https://sass-lang.com/install) to s
 omcss/
 ├── base/
 │   ├── _grid.scss
-│   ├── _helper.scss
 │   ├── _reset.scss
 │   └── _typography.scss
 │   
@@ -52,6 +51,7 @@ omcss/
 │   ├── _config.scss
 │   ├── _extends.scss
 │   ├── _functions.scss
+│   ├── _helpers.scss
 │   ├── _mixins.scss
 │   └── _variables.scss
 │   

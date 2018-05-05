@@ -221,6 +221,7 @@ OMCSS Helper Classes - OMCSS Framework
 .flex-align-self-stretch {
   align-self: stretch;
 }
+
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -239,12 +240,24 @@ OMCSS Helper Classes - OMCSS Framework
   color: $color-green-base;
 }
 
+.txt-green-dark {
+  color: $color-green-dark;
+}
+
+.txt-green-darker {
+  color: $color-green-darker;
+}
+
 .txt-grey-darkest {
   color: $color-grey-darkest;
 }
 
 .txt-grey-darker {
   color: $color-grey-darker;
+}
+
+.txt-grey-base {
+  color: $color-grey-base;
 }
 /**
 * Text Alignment
@@ -644,8 +657,8 @@ OMCSS Helper Classes - OMCSS Framework
 }
 
 .px0 {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .py0 {

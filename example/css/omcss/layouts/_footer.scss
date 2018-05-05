@@ -1,0 +1,22 @@
+#footer {
+  width: 100%;
+  background: $color-grey-darkest;
+
+  @include medium-size-screen {
+    width: 85%;
+    margin-top: $space-1;
+    margin-bottom: $space-1;
+  }
+
+  @include large-size-screen {
+    margin-top: $space-1;
+    margin-bottom: $space-1;
+    width: 75%;
+  }
+
+  ._copyright {
+    color: $color-grey-dark;
+    text-align: center;
+    flex-grow: 1;
+  }
+}

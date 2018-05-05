@@ -1,0 +1,17 @@
+#header {
+    width: 100%;
+    background: $color-green-lighter;
+    border: 1px solid $color-green-light;
+
+    @include medium-size-screen {
+      width: 85%;
+      margin-top: $space-1;
+      margin-bottom: $space-1;
+    }
+
+    @include large-size-screen {
+      margin-top: $space-1;
+      margin-bottom: $space-1;
+      width: 75%;
+    }
+}

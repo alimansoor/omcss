@@ -34,14 +34,16 @@ $color-white: #FFF;
 //Font Family
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 $font-sans-serif: sans-serif;
 $font-serif: serif;
 $font-mono: monospace;
+$font-cursive: cursive;
 
 $font-primary: 'Open Sans';
 $font-secondary: sans-serif;
-$font-brand: '';
+$font-brand: 'Pacifico';
 
 
 //Spacing

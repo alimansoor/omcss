@@ -1,6 +1,7 @@
 /* Green */
 /* Grey */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 /*******************************************************************************
 OMCSS Helper Classes - OMCSS Framework
 *******************************************************************************/
@@ -207,11 +208,20 @@ OMCSS Helper Classes - OMCSS Framework
 .txt-green-base {
   color: #38c172; }
 
+.txt-green-dark {
+  color: #1f9d55; }
+
+.txt-green-darker {
+  color: #1a4731; }
+
 .txt-grey-darkest {
   color: #555555; }
 
 .txt-grey-darker {
   color: #7A7A7A; }
+
+.txt-grey-base {
+  color: #CCCCCC; }
 
 /**
 * Text Alignment
@@ -531,8 +541,8 @@ OMCSS Helper Classes - OMCSS Framework
   padding-left: 0; }
 
 .px0 {
-  padding-left: 0;
-  padding-right: 0; }
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 .py0 {
   padding-top: 0;
@@ -720,8 +730,7 @@ html, body {
 
 body {
   line-height: 1;
-  min-width: 320px;
-  overflow: hidden; }
+  min-width: 320px; }
 
 ol, ul {
   list-style: none; }
@@ -1850,10 +1859,64 @@ html {
     -ms-flex-item-align: stretch !important;
     align-self: stretch !important; } }
 /*# sourceMappingURL=bootstrap-grid.css.map */
+#header {
+  width: 100%;
+  background: #a2f5bf;
+  border: 1px solid #51d88a; }
+@media (min-width: 600px) {
+  #header {
+    width: 85%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; } }
+@media (min-width: 1024px) {
+  #header {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 75%; } }
+
+#footer {
+  width: 100%;
+  background: #555555; }
+@media (min-width: 600px) {
+  #footer {
+    width: 85%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; } }
+@media (min-width: 1024px) {
+  #footer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 75%; } }
+#footer ._copyright {
+  color: #949494;
+  text-align: center;
+  flex-grow: 1; }
+
+.navigation ._navigation-items .__navigation-item {
+  display: inline-block; }
+.navigation ._navigation-items .__navigation-item .___url {
+  text-decoration: none; }
+
+.brand {
+  font-family: "Pacifico", cursive; }
+
+.banner {
+  background: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 65%; }
+@media (min-width: 600px) {
+  .banner {
+    width: 85%; } }
+@media (min-width: 1024px) {
+  .banner {
+    width: 75%; } }
+
 .card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 300px;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; }
 .card ._image img {
   width: 100%; }

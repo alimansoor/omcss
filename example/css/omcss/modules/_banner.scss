@@ -1,0 +1,15 @@
+.banner {
+  background: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position-x: 65%;
+
+  @include medium-size-screen {
+    width: 85%;
+  }
+
+  @include large-size-screen {
+    width: 75%;
+  }
+}
